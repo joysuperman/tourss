@@ -68,7 +68,7 @@
 							<li><a href="page.php?type=aboutus">About</a></li>
 								<li><a href="package-list.php">Tour Packages</a></li>
 								<li><a href="page.php?type=privacy">Privacy Policy</a></li>
-								<li><a href="gallery.html">Photo Gallery</a></li>
+								<li><a href="gallery.php">Photo Gallery</a></li>
 								<li><a href="page.php?type=contact">Contact Us</a></li>
 								<?php if($_SESSION['login'])
 {?>

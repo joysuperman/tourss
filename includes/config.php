@@ -13,4 +13,11 @@ catch (PDOException $e)
 {
 exit("Error: " . $e->getMessage());
 }
+
+define('SERVER_PATH',$_SERVER['DOCUMENT_ROOT'].'/tourss/');
+define('SITE_PATH','http://localhost/tourss/');
+
+define('PRODUCT_IMG_SERVER_PATH',SERVER_PATH.'images/');
+define('PRODUCT_IMG_SITE_PATH',SITE_PATH.'images/');
+
 ?>
