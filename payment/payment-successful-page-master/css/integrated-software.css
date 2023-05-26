@@ -1,0 +1,828 @@
+/*popup css starts here*/
+img.company-logos{
+    width: 100%;
+}
+.modal-exit-popup-header{
+   padding: 0;
+   min-height: 0;
+}
+.modal-exit-popup-content{
+    background-color: #0093dd;
+    padding: 20px;
+}
+.modal-dialog-exit-popup{
+    width: 100%;
+    max-width: 750px;
+    margin: 40px auto;
+}
+.modal-exit-popup-body h1{
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+    font-size: 32px;
+}
+.modal-exit-popup-body p{
+    text-align: center;
+    color: #fff;
+}
+.modal-exit-popup-body h4{
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+}
+form#exit-popup-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+input.popup-input{
+    width: 100%;
+    max-width: 335px;
+    height: 45px;
+    margin: 15px auto;
+    border: 0;
+    border-radius: 7px;
+    padding: 8px;
+}
+input.popup-message{
+    width: 100%;
+    max-width: 685px;
+    height: 45px;
+    margin: 15px auto;
+    border: 0;
+    border-radius: 7px;
+    padding: 8px;
+}
+input#exit-popup-submit{
+    width: 160px;
+    height: 40px;
+    background-color: #ffd246;
+    color: #16325c;
+    border: 0;
+    border-radius: 7px;
+    font-weight: 900;
+    font-size: 18px;
+}
+@media only screen and (max-width:400px){
+    .modal-exit-popup-body h1{
+       font-size: 26px;
+    }
+    .modal-exit-popup-body p {
+      font-size: 14px;
+    }
+    .modal-exit-popup-body h4 {
+      font-size: 22px;
+    }
+}
+#popup {
+    position: fixed;
+    width: 100%;
+    visibility: hidden;
+    z-index: 10002;
+    top: 0;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+    margin: 0 auto;
+    text-align: center;
+    background: #1f1f1fd9;
+   }
+  p#popup_form_error{
+      color: #fff !important;
+  }
+/*sales hero section starts here*/
+section.ism-hero-section{
+    background-color: #0093dd;
+    margin-top: 98px;
+}
+h1.ism-hero-h1{
+    color: #fff;
+    font-weight: 900;
+}
+p.ism-hero-para{
+    color: #fff;
+    font-weight: 500;
+    font-style: normal;
+    margin: 15px 0;
+}
+div.ism-hero-box{
+    padding: 20px;
+}
+a.hero-a-tag{
+    cursor: pointer;
+    text-decoration: none;
+}
+button.btn.btn-hero-ism{
+    width: 203px;
+    height: 40px; 
+    font-size: 20px;
+    border-radius: 50px;
+    border: none;
+    background: #ffd246 0% 0% no-repeat padding-box;
+    border-radius: 7px;
+    opacity: 1;
+    color: #16325C;
+    font-weight: 600;
+}
+img.ism-img{
+    width: 100%;
+}
+#cssmenu > ul > li > a.header-menu:hover{
+    /* border-bottom: 2px solid #ffffff; */
+    /* color: #000 !important; */
+ }
+ #cssmenu > ul > li > a.header-menu::after{
+     content: '';
+     display: block;
+     width: 0;
+     height: 2px;
+     background-color: #555;
+     transition: width .3s;
+ }
+ #cssmenu > ul > li > a.header-menu:hover::after{
+     width: 100%;
+     transition: width .3s;
+ }
+ /*customer logos section starts here*/
+section.customer-logos-section{
+    background-color: #0093dd;
+    padding: 20px;
+}
+.customer-logos-title h1{
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+section.customer-logos.slider.homepage-logos-slider{
+    background-color: #fff;
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+}
+div.container.logos-company.homepage{
+    margin: 50px auto;
+}
+img.customer-logo{
+    width: 100%;
+    max-width: 140px;
+    margin: 5px auto;
+}
+/* .slick-slide img {
+ margin: 10px auto;
+} */
+/*ism-sales box section starts here*/
+section.white-background{
+    padding: 20px;
+    background-color: #fff;
+}
+.ism-title h1{
+    text-align: center;
+    font: normal normal 600 36px/58px Montserrat;
+    letter-spacing: 0px;
+    color: #16325C;
+    opacity: 1;
+}
+.sales-box-flex-image img{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+}
+.sales-box-title h1{
+    text-align: center;
+    letter-spacing: 0px;
+    color: #16325C;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+.sales-box-subtitle h2{
+    text-align: center;
+    letter-spacing: 0px;
+    color: #0092DC;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+.sales-box-para p{
+    text-align: left;
+    letter-spacing: 0px;
+    color: #16325C;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+.sales-box-highlights p{
+    text-align: left;
+    letter-spacing: 0px;
+    color: #0092DC;
+    opacity: 1;
+    width: 290px;
+    height: 24px;
+    margin-bottom: 20px;
+}
+i.fa.fa-check-circle{
+    color: #6DC642;
+    opacity: 1;
+}
+.sales-box-cta{
+    text-align: center;
+}
+button.sales-box-button{
+    width: 203px;
+    height: 40px;
+    background: #FFB908 0% 0% no-repeat padding-box;
+    border-radius: 7px;
+    border: 0;
+    opacity: 1;
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 0px;
+    color: #16325C;
+    margin-top: 20px;
+}
+/*ism marketing box css starts here*/
+section.blue-background{
+    padding: 20px;
+    background-color: #0093dd;
+}
+.marketing-box-flex-image img{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+}
+.marketing-box-title h1{
+    text-align: center;
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+.marketing-box-subtitle h2{
+    text-align: center;
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+.marketing-box-para p{
+    text-align: left;
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+.marketing-box-highlights p{
+    text-align: left;
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 1;
+    width: 290px;
+    height: 24px;
+    margin-bottom: 20px;
+}
+.marketing-box-cta{
+    text-align: center;
+}
+button.marketing-box-button{
+    width: 203px;
+    height: 40px;
+    background: #FFB908 0% 0% no-repeat padding-box;
+    border-radius: 7px;
+    border: 0;
+    opacity: 1;
+    letter-spacing: 0px;
+    color: #16325C;
+    font-weight: 900;
+    font-size: 22px;
+    margin-top: 20px;
+}
+/*ism support box css starts here*/
+.support-box-flex-image img{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+}
+.support-box-title h1{
+    text-align: center;
+    letter-spacing: 0px;
+    color: #16325C;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+.support-box-subtitle h2{
+    text-align: center;
+    letter-spacing: 0px;
+    color: #0092DC;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+.support-box-para p{
+    text-align: left;
+    letter-spacing: 0px;
+    color: #16325C;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+.support-box-highlights p{
+    text-align: left;
+    letter-spacing: 0px;
+    color: #0092DC;
+    opacity: 1;
+    width: 290px;
+    height: 24px;
+    margin-bottom: 20px;
+}
+.support-box-cta{
+    text-align: center;
+}
+button.support-box-button{
+    width: 203px;
+    height: 40px;
+    background: #FFB908 0% 0% no-repeat padding-box;
+    border-radius: 7px;
+    border: 0;
+    opacity: 1;
+    letter-spacing: 0px;
+    color: #16325C;
+    font-weight: 900;
+    font-size: 22px;
+    margin-top: 20px;
+}
+/*ism success box starts here*/
+.success-box-flex-image img{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+}
+.success-box-title h1{
+    text-align: center;
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+.success-box-subtitle h2{
+    text-align: center;
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+.success-box-para p{
+    text-align: left;
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+.success-box-highlights p{
+    text-align: left;
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 1;
+    width: 290px;
+    height: 24px;
+    margin-bottom: 20px;
+}
+.success-box-cta{
+    text-align: center;
+}
+button.success-box-button{
+    width: 203px;
+    height: 40px;
+    background: #FFB908 0% 0% no-repeat padding-box;
+    border-radius: 7px;
+    border: 0;
+    opacity: 1;
+    letter-spacing: 0px;
+    color: #16325C;
+    font-weight: 900;
+    font-size: 22px;
+    margin-top: 20px;
+}
+/*teleduce pricing section css starts here*/
+section.teleduce-pricing-section{
+    background-color: #fff;
+    padding: 20px;
+}
+.teleduce-pricing-title h1{
+    letter-spacing: 0px;
+    color: #16325C;
+    font-weight: 900;
+    line-height: 1.5em;
+    text-align: center;
+    margin: 25px auto;
+}
+span#price-saving{
+    background: #0093dd;
+    color: #fff;
+    padding: 5px;
+}
+.teleduce-pricing-subtitle h2{
+    text-align: center;
+    font: normal normal 600 40px/50px Montserrat;
+    letter-spacing: 0px;
+    color: #0092DC;
+    opacity: 1;
+    font-size: 32px;
+}
+.corefactors-pricing{
+    width: 100%;
+    max-width: 374px;
+    height: 573px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #0092DC73;
+    opacity: 1;
+    border-radius: 25px;
+}
+.corefactors-pricing-logo img{
+    width: 250px;
+    height: 58px;
+    opacity: 1;
+    margin: 0 auto;
+    display: block;
+}
+.corefactors-pricing-para p{
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    font-weight: 900;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 21px;
+}
+.corefactors-pricing-benefits p{
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin: 25px auto;
+    font-size: 16px;
+}
+.versus img{
+    margin: 30px auto;
+    display: block;
+}
+.others-pricing-box{
+    width: 100%;
+    max-width: 332px;
+    height: 80px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 3px #0092DC73;
+    border-radius: 9px;
+    opacity: 1;
+    margin: 15px auto;
+}
+.others-pricing-title{
+    color: #16325C; 
+    opacity: 1;
+    text-align: center;
+}
+.others-logo img{
+    width: 100%;
+    max-width: 90px;
+}
+.others-pricing-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.others-price p{
+    letter-spacing: 0px;
+    color: #0092DC;
+    opacity: 1;
+    font-weight:900;
+    font-size: 20px;
+}
+p.total-price{
+    width: 177px;
+    height: 39px;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #0092DC;
+    opacity: 1;
+    font-weight:900;
+    font-size: 32px;
+}
+span#plus-symbol,
+span#equals-symbol{
+    letter-spacing: 0px;
+    color: #16325C;
+    opacity: 1;
+    font-weight: 900;
+    font-size: 32px;
+    width: 20px;
+    height: 40px;
+    margin: 0 auto;
+    display: block;
+}
+.pricing-cta{
+    text-align: center;
+    margin: 40px auto;
+}
+button.pricing-cta-button{
+    width: 196px;
+    height: 51px;
+    background: #FFB908 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 15px #FFB9088F;
+    border-radius: 7px;
+    opacity: 1;
+    border: 0;
+    color: #fff;
+    font-size: 30px;
+}
+/*ism and crm css section starts here*/
+section.ism-and-crm-section{
+    padding: 20px;
+}
+span.content-highlights{
+    color: #ffd246;
+    font-weight: 900;
+}
+.ism-and-crm-title h1{
+    letter-spacing: 0px;
+    color: #16325C;
+    opacity: 1;
+    text-align: center;
+    font-weight: 900;
+}
+.ism-and-crm{
+    background: #0092DC 0% 0% no-repeat padding-box;
+    /* box-shadow: 0px 0px 15px #0092DC73; */
+    border-radius: 38px;
+    opacity: 1;
+    width: 100%;
+    max-width: 822px;
+    min-height: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.ism-and-crm-slick-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+}
+.card-left-content{
+    max-width: 50%;
+}
+.card-left-content img,
+.card-right-content img{
+    width: 100%;
+    max-width: 194px;
+}
+.card-left-content h4,
+.card-right-content h4
+{
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+.card-left-content p,
+.card-right-content p{
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-top: 20px;
+}
+.ism-vs-crm{
+    align-self: center;
+}
+.ism-vs-crm h1{
+    width: 71px;
+    height: 61px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    font-weight: 900;
+}
+/*testimonials section starts here*/
+div.testimonials-title h1{
+    color: #16325C;
+    font-weight: 600;
+    text-align: center;
+}
+section.testimonials-section{
+    background-color: #0093dd;
+    padding: 20px;
+    /* margin: 10px 0; */
+    background-image: url(https://d2woyw6vp5g0b2.cloudfront.net/images/landingpage/World-map-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+div.testimonials-content h1{
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.4em;
+    font-size: 32px;
+    text-align: center;
+}
+div.testimonials-title{
+    padding: 20px;
+}
+div.salesbox-testimonial{
+    /* width: 100%;
+    max-width: 400px; */
+    padding: 0 30px;
+}
+div.testimonial-carousel{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 25px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.18) 0.4rem 0.4rem 1.6rem 0px;
+}
+p.testimonial{
+    color: #000;
+    text-align: left;
+}
+.image-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+div.client-box img{
+    width: 100%;
+    max-width: 100px;
+}
+/*signup section starts here*/
+section.freetrial-signup-section{
+    background-color: #ffd246;
+}
+div.freetrial-signup{
+    padding: 50px;
+}
+div.signup-title h1{
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+input#signup-name.form-control,
+input#signup-mobile.form-control
+{   
+    width: 275px;
+    height: 45px;
+    margin: 20px auto;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 7px;
+}
+input#sales-signup-submit.btn.btn-sales-signup{
+    font-family: montserrat;
+    width: 275px;
+    height: 45px;
+    margin: 20px auto;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 7px;
+    background-color: #0093dd;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+p#form_error_freetrial,
+p#form_success_freetrial{
+    text-align: center;
+}
+/*media queries starts here*/
+@media only screen and (min-width:768px){
+    div.ism-hero-box{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 60px 0px;
+    }
+    img.ism-img{
+        width: 400px;
+    }
+    div.ism-hero-content{
+        text-align: right;
+        padding-left: 80px;
+    }
+    h1.ism-hero-h1{
+        font-size: 32px;
+    }
+    /* section.white-background,
+    section.blue-background{
+        height: 550px;
+    } */
+    .sales-box-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 40px 0px;
+    }
+    .sales-box-flex-content{
+        max-width: 50%;
+    }
+    .sales-box-flex-image{
+        order: 2;
+    }
+    .marketing-box-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 40px 0px;
+    }
+    .marketing-box-flex-content{
+        max-width: 50%;
+    }
+    /* .marketing-box-flex-image{
+        order: 2;
+    } */
+    .support-box-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 40px 0px;
+    }
+    .support-box-flex-content{
+        max-width: 50%;
+    }
+    .support-box-flex-image{
+        order: 2;
+    }
+    .success-box-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 40px 0px;
+    }
+    .success-box-flex-content{
+        max-width: 50%;
+    }
+    /* .success-box-flex-image{
+        order: 2;
+    } */
+    .sales-box-highlights,
+    .marketing-box-highlights,
+    .support-box-highlights,
+    .success-box-highlights{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .teleduce-pricing-details{
+        display: flex;
+        justify-content: space-around;
+        margin: 50px auto;
+    }
+    .corefactors-pricing{
+        margin: 0;
+    }
+    .versus{
+        align-self: center;
+    }
+    .others-pricing-box{
+       width: 332px;
+       margin: 0;
+    }
+    div.testimonials{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    div.testimonials-content{
+        width: 50%;
+    }
+    section.testimonials-section{
+        padding: 50px 0;
+    }
+    div.testimonials-content h1{
+        font-size: 60px;
+        text-align: left;
+    }
+    form#salesbox-signup-form{
+        display: flex;
+    }
+    /* div.sales-hero-box{
+        display: flex;
+    } */
+}
+@media screen and (min-width:768px) and (max-width:992px){
+    img.teleduce-img{
+        width:300px;
+       }
+}
+@media only screen and (min-width:992px){
+    /* div.why-teleduce-content{
+    height: 250px;
+    } */
+}
+@media only screen and (max-width:992px){
+    .ism-and-crm-carousel{
+        padding: 0;
+    }
+}

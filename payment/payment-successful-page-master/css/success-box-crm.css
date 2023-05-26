@@ -1,0 +1,517 @@
+/*exit popup css starts here*/
+#tricog-popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    z-index: 10002;
+    top: 0;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+    margin: 0 auto;
+    text-align: center;
+    background: #1f1f1fd9;
+}
+/*sales hero section starts here*/
+section.sales-hero-section{
+    background-color: #0093dd;
+    margin-top: 98px;
+}
+h1.sales-hero-h1{
+    color: #fff;
+    font-weight: 900;
+}
+p.sales-hero-para{
+    color: #fff;
+    font-weight: 500;
+    font-style: italic;
+    margin: 15px 0;
+}
+div.sales-hero-box{
+    padding: 20px;
+}
+a.hero-a-tag{
+    cursor: pointer;
+    text-decoration: none;
+}
+button.btn.btn-hero-sales{
+    width: 275px;
+    height: 45px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #ffd246;
+    color: #16325C;
+    font-weight: 600;
+}
+img.sales-img{
+    width: 100%;
+}
+#cssmenu > ul > li > a.header-menu:hover{
+    /* border-bottom: 2px solid #ffffff; */
+    /* color: #000 !important; */
+ }
+ #cssmenu > ul > li > a.header-menu::after{
+     content: '';
+     display: block;
+     width: 0;
+     height: 2px;
+     background-color: #555;
+     transition: width .3s;
+ }
+ #cssmenu > ul > li > a.header-menu:hover::after{
+     width: 100%;
+     transition: width .3s;
+ }
+/*featured cards 1 section starts here*/
+section.featured-cards-section-1{
+    padding: 10px 0;
+}
+div.featured-card-1{
+    padding: 20px;
+    text-align: center;
+}
+button.btn.btn-cards-1{
+    font-family: montserrat;
+    width: 200px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    background-color: #ffd246;
+    color: #16325C;
+    outline: none;
+    box-shadow: 0 12px 18px #ffb90863;
+    cursor: pointer;
+}
+div.cards-1{
+    width: 100%;
+    max-width: 250px;
+    height: 500px;
+    /* min-height: 720px; */
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 25px;
+    /* box-shadow: rgba(0, 0, 0, 0.18) 0.4rem 0.4rem 1.6rem 0px; */
+    box-shadow: 0 0px 8px #00000028;
+
+}
+div.featured-card-1-title h1{
+    color: #16325c;
+    font-weight: 600;
+}
+div.cards-1-title h3{
+    color: #16325c;
+}
+div.cards-1-para p{
+    text-align: left;
+    /* font-weight: 600;
+    margin: 25px 0 0 0; */
+}
+.fa-check-circle{
+    color: #6dc742;
+}
+img.cards-1-img{
+    width: 100%;
+    max-width: 300px;
+}
+/*featured cards 2 section starts here*/
+section.featured-cards-section-2{
+    padding: 10px 0;
+}
+div.featured-card-2{
+    padding: 20px;
+    text-align: center;
+}
+div.cards-2{
+    width: 100%;
+    max-width:300px;
+    min-height: 250px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0.4rem 0.4rem 1.6rem 0px;
+}
+div.cards-2-title h3{
+    color: #16325c;
+    font-weight: 600;
+}
+div.featured-card-2-title h1{
+    color: #16325c;
+    font-weight: 600;
+}
+div.featured-card-2-footer h1{
+    color: #16325c;
+    font-weight: 600;
+}
+img.cards-2-img{
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+}
+div.cards-2-para{
+    text-align: left;
+}
+/*product features section starts here*/
+section.product-features-section{
+    background-color: #0093dd;
+    padding: 20px;
+    margin: 10px 0;
+}
+div.features-card{
+    margin: 40px auto;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+}
+div.fc-title h3{
+    color: #fff;
+    font-weight: 600;
+    margin-top: 20px;
+}
+div.fc-para p{
+    color: #fff;
+}
+div.fc-icon{
+    background-color: #fff;
+    max-width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+img.fc-image{
+    width: 100%;
+    max-width: 75px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 18px;
+}
+/*why ism starts here*/
+section.why-ism-section{
+    padding: 10px 0;
+}
+div.why-ism{
+    padding: 20px;
+    /* text-align: center; */
+}
+div.why-ism-title h1{
+    color: #16325c;
+    font-weight: 600;
+}
+img.ism-image{
+width: 100%;
+margin: 0 auto;
+display: block;
+}
+button.btn.why-ism-btn{
+    font-family: montserrat;
+    width: 185px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    background-color: #ffd246;
+    color: #16325C;
+    outline: none;
+    box-shadow: 0 12px 18px #ffb90863;
+    cursor: pointer;
+}
+/*tabs section starts here*/
+section.tabs-section{
+    padding: 20px;
+}
+.nav-tabs{
+    border: 0;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #0093dd;
+    cursor: default;
+    background-color: #fff;
+    border: 0;
+    border-bottom: 1px solid #0093dd;
+    font-size: 30px;
+}
+.nav-tabs>li>a {
+border: 0;
+color: #16325c;
+font-size: 30px;
+}
+div.tab-content
+{   
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin-top: 25px;
+}
+p.tab-para{
+    color: #16325c;
+}
+ul.nav.nav-tabs li{
+
+}
+/*testimonials section starts here*/
+div.testimonials-title h1{
+    color: #16325C;
+    font-weight: 600;
+    text-align: center;
+}
+section.testimonials-section{
+    background-color: #0093dd;
+    padding: 20px;
+    margin: 10px 0;
+    background-image: url(https://d2woyw6vp5g0b2.cloudfront.net/images/landingpage/World-map-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+div.testimonials-content h1{
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.4em;
+    font-size: 32px;
+    text-align: center;
+}
+div.testimonials-title{
+    padding: 20px;
+}
+div.salesbox-testimonial{
+    /* width: 100%;
+    max-width: 400px; */
+    padding: 0 30px;
+}
+div.testimonial-carousel{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 25px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.18) 0.4rem 0.4rem 1.6rem 0px;
+}
+p.testimonial{
+    color: #000;
+    text-align: left;
+}
+.image-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+div.client-box img{
+    width: 100%;
+    max-width: 100px;
+}
+/*why teleduce section starts here*/
+div.why-teleduce-title h1{
+    text-align: center;
+    color: #16325c;
+    font-weight: 600;
+}
+section.why-teleduce-section{
+    background-color: #f7f7f7;
+    margin: 10px 0;
+}
+div.why-teleduce{
+  padding: 20px;
+}
+div.why-teleduce-title{
+    padding: 20px;
+}
+div.why-teleduce-content{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 50px auto;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 25px;
+    /* box-shadow: rgba(0, 0, 0, 0.18) 0.4rem 0.4rem 1.6rem 0px; */
+    box-shadow: 0px 7px 10px 0px rgba(0,147,221,0.25);
+}
+div.why-teleduce-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+div.teleduce-datas{
+    width: 100%;
+    max-width: 140px;
+    padding: 10px 0px 0px;
+    margin: 10px auto;
+}
+p.teleduce-data{
+    color: #0093dd;
+    font-weight: 600;
+    font-size: 24px;
+}
+p.teleduce-data-para{
+    color: #16325c;
+}
+img.teleduce-img{
+    width: 100%;
+    /* max-width: 350px; */
+    margin: 0 auto;
+    display: block;
+}
+/*customers slider section starts here*/
+section.customers-slider{
+    background-color: #f7f7f7;
+    padding: 50px 0px;
+}
+div.customers-slide-title h1{
+    text-align: center;
+    color: #16325c;
+    font-weight: 600;
+}
+div.customers-slide-title{
+    padding: 25px;
+}
+section.customer-logos.slider.salesbox-logos-slider{
+    background-color: #f7f7f7;
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+}
+img.customer-logo{
+    width: 100%;
+    max-width: 150px;
+    /* height: 150px; */
+}
+/*signup section starts here*/
+section.freetrial-signup-section{
+    background-color: #ffd246;
+}
+div.freetrial-signup{
+    padding: 50px;
+}
+div.signup-title h1{
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+input#signup-name.form-control,
+input#signup-mobile.form-control
+{   
+    width: 275px;
+    height: 45px;
+    margin: 20px auto;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 50px;
+}
+input#sales-signup-submit.btn.btn-sales-signup{
+    font-family: montserrat;
+    width: 275px;
+    height: 45px;
+    margin: 20px auto;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 50px;
+    background-color: #0093dd;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+p#form_error_freetrial,
+p#form_success_freetrial{
+    text-align: center;
+}
+/*media queries starts here*/
+@media only screen and (min-width:768px){
+    .sales-hero-box{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    img.sales-img{
+        width: 400px;
+    }
+    div.sales-hero-content{
+        text-align: right;
+    }
+    h1.sales-hero-h1{
+        font-size: 32px;
+    }
+    div.featured-cards-1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    div.featured-cards-2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    div.product-features{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    form#salesbox-signup-form{
+    display: flex;
+    }
+    div.why-ism{
+        display: flex;
+        align-items: center;
+    }
+    div.why-ism-content{
+        margin-left: 50px;
+    }
+    img.ism-image{
+        width: 450px;
+    }
+    section.why-teleduce-section{
+        padding: 50px 0;
+    }
+    div.why-teleduce{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* padding: 50px 0; */
+    }
+    div.why-teleduce-content{
+        margin: 0;
+    }
+    img.teleduce-img{
+        width: 450px;
+    }
+    div.testimonials{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    div.testimonials-content{
+        width: 50%;
+    }
+    section.testimonials-section{
+        padding: 50px 0;
+    }
+    div.testimonials-content h1{
+        font-size: 60px;
+        text-align: left;
+    }
+    /* div.sales-hero-box{
+        display: flex;
+    } */
+}
+@media screen and (min-width:768px) and (max-width:992px){
+    img.teleduce-img{
+        width:300px;
+       }
+}
+@media only screen and (min-width:992px){
+    /* div.why-teleduce-content{
+    height: 250px;
+    } */
+}

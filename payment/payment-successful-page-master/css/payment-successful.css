@@ -1,0 +1,304 @@
+/*thankyou section css starts here*/
+section.thankyou-section{
+    padding: 50px 20px;
+    background-color: #6dc742;
+}
+.thankyou-content h1{
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+.thumbs-up{
+    position: relative;
+}
+img.thumbs-up-bg{
+    width: 100%;
+    max-width: 100px;
+    margin: 25px auto;
+    display: block;
+}
+img.thumbs-up-image{
+    width: 100%;
+    max-width: 50px;
+    position: absolute;
+    top: 24%;
+    left: 48%;
+}
+.thankyou-content h2{
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+/*plan details section css starts here*/
+section.plan-details-section{
+    padding: 20px;
+}
+h2#user-name{
+    color: #16325c;
+    font-weight: 900;
+}
+p#plan-detail{
+    color: #16325c;
+    font-weight: 400;
+}
+span#plan-name{
+    font-weight: 900;
+    font-style: italic;
+    font-size: 18px;
+}
+img.card-icons{
+    width: 100%;
+    max-width: 50px;
+}
+img.chat-icon{
+    max-width: 70px;
+}
+img.email-icon{
+    max-width: 70px;
+}
+.plan-details-card{
+    width: 100%;
+    max-width: 250px;
+    margin: 40px auto;
+    padding: 15px;
+    background: #F7F7F7 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 15px #0092DC40;
+    border-radius: 40px;
+    opacity: 1;
+}
+.details{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px auto;
+}
+span#no-of-users{
+    color: #000;
+    font-weight: 900;
+    font-size: 24px;
+}
+span#no-of-credits{
+    color: #000;
+    font-weight: 900;
+    font-size: 24px;
+}
+span#no-of-sms{
+    color: #000;
+    font-weight: 900;
+    font-size: 24px;
+}
+span#no-of-mails{
+    color: #000;
+    font-weight: 900;
+    font-size: 24px;
+}
+span.units{
+    color: #000;
+    font-weight: 900;
+    font-size: 24px;
+}
+.details p{
+    color: #b2b2b2;
+    font-weight: 900;
+}
+hr.hr-line{
+    width: 100%;
+    border: 1px solid #efefef;
+}
+/*invoice details css starts here*/
+section.invoice-details-section{
+    padding: 20px;
+}
+.invoice-details-title h2{
+  color: #16325c;
+  font-weight: 600;
+  margin: 0px auto 40px;
+}
+.invoice-details-card{
+    background-color: #fff;
+    border-radius: 56px;
+    box-shadow: 0 7px 10px 0 rgba(0,147,221,.25);
+}
+.invoice-header{
+    width: 100%;
+    background-color: #0093dd;
+    border-radius: 30px 30px 0 0;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+img.header-logo{
+    width: 100%;
+    max-width: 200px;
+}
+.invoice-header p{
+    color: #fff;
+    font-weight: 600;
+    margin: 10px auto;
+}
+p#company-name{
+    font-size: 25px;
+}
+p#success-message{
+    background-color: #6dc742;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: 900;
+    letter-spacing: 0;
+}
+.invoice-body-title h3{
+     color: #989898;
+     font-weight: 900;
+     margin: 30px auto;
+     padding: 20px;
+}
+.plans{
+    background-color: #f7f7f7;
+    border-radius: 25px;
+    border: 0;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 280px;
+}
+p#plans-para1{
+    color: #000;
+    font-weight: 900;
+}
+.payment-status{
+    margin: 40px auto;
+    padding: 0 20px;
+}
+.payment-status p{
+    color: #000;
+    font-weight: 900;
+}
+p.payment-status-titles{
+    color: #989898;
+    font-weight: 900;
+}
+.billing-status{
+    margin: 40px auto;
+    padding: 0 20px;
+}
+.billing-status p{
+    color: #000;
+    font-weight: 900;
+}
+p.billing-status-titles{
+    color: #989898;
+    font-weight: 900;
+}
+hr#hr-line2{
+    width: 90%;
+    border: 2px solid #f7f7f7;
+}
+.amount-paid{
+    padding: 20px;
+}
+p#amount-paid-title{
+    color: #989898;
+    font-weight: 900;
+}
+p#amount-paid-para{
+    margin: 30px auto;
+}
+span#paid-amount{
+    color: #000;
+    font-weight: 900;
+    font-size: 32px;
+}
+.cta{
+    text-align: center;
+    margin: 50px auto 30px;
+}
+button.cta-button{
+    background-color: #fff;
+    color: #16325c;
+    box-shadow: 2px 2px 15px #FFB908A6;
+    border: 2px solid #FFB908;
+    opacity: 1;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 250px;
+    height: 45px;
+    font-weight: 900;
+    font-size: 25px;
+    /* margin: 50px auto;
+    display: block; */
+}
+button.cta-button:hover{
+    background-color: #ffd246;
+    border: 0;
+}
+@media only screen and (min-width:768px){
+    .plan-details-card{
+        display: flex;
+        width: 100%;
+        max-width: 1170px;
+    }
+    p#plan-detail{
+        font-size: 20px;
+        line-height: 1.5em;
+    }
+    span#plan-name{
+       font-size: 24px;
+    }
+    .details p{
+        margin: 0 20px;
+    }
+    .lines{
+        border-left: 2px solid #efefef;
+    }
+    p#success-message{
+        width: 130px;
+        height: 40px;
+        text-align: center;
+    }
+    p#company-name{
+        margin-left: 30px;
+    }
+    .invoice-body-title h3{
+        margin: 30px;
+    }
+    .invoice-body-flex{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        position: relative;
+    }
+    .plans{
+        margin: 0px auto 40px;
+    }
+    .amount-paid{
+        margin: 0 auto;
+    }
+    .lines2{
+        border-left: 2px solid #f7f7f7;
+        height: 245px;
+        position: absolute;
+        left: 78%;
+    }
+    
+}
+@media only screen and (max-width:400px){
+    img.thumbs-up-image{
+        left: 42%;
+    }
+}
+@media only screen and (min-width:401px) and (max-width:600px){
+    img.thumbs-up-image{
+        left: 45%;
+    }
+}
+@media only screen and (min-width:601px) and (max-width:992px){
+    img.thumbs-up-image{
+        left: 47%;
+    }
+}

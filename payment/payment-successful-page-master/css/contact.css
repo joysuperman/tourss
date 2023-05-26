@@ -1,0 +1,459 @@
+/*hero form section starts here*/
+section#hero-form-section{
+    padding: 10px;
+    margin-top: 142px;
+}
+img.hero-form-image{
+    width: 100%;
+}
+/*new design css*/
+/* div.hero-image{
+    max-width: 350px;
+    margin: 0 auto;
+    display: block;
+} */
+/*ends here*/
+h1.hero-title{
+    text-align: center;
+    padding: 5px;
+}
+div.hero-form{
+    position: relative;
+}
+div.hero-contact-form,
+div.sales-form,
+div.support-form,
+div.freetrial-form
+{
+    width: 100%;
+    max-width: 300px;
+    height: 500px;
+    margin: 0 auto;
+}
+.hero-contact-form .form-control{
+    margin: 15px 0px;
+}
+input#contact-submit.btn.btn-default.btn-send{
+    margin: 0 auto;
+    display: block;
+    background-color: #ffd246;
+    color: #16325c;
+    font-weight: 600;
+    border: 0;
+}
+.sales-form .form-control{
+    margin: 8px 0px;
+}
+h3.sales-form-title{
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+}
+img.sales-image{
+    width: 35%;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+input#sales-submit.btn.btn-default.btn-send{
+    margin: 0 auto;
+    display: block;
+    background-color: #ffd246;
+    color: #16325c;
+    font-weight: 600;
+    border: 0;
+}
+.support-form .form-control{
+    margin: 8px 0px;
+}
+h3.support-form-title{
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+}
+input#support-submit.btn.btn-default.btn-send{
+    margin: 0 auto;
+    display: block;
+    background-color: #ffd246;
+    color: #16325c;
+    font-weight: 600;
+    border: 0;
+}
+img.support-image{
+    width: 35%;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    /* height: 80px; */
+}
+.freetrial-form .form-control{
+    margin: 35px 0px;
+}
+h3.freetrial-form-title{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+input#freetrial-submit.btn.btn-default.btn-send{
+    margin: 0 auto;
+    display: block;
+    background-color: #ffd246;
+    color: #16325c;
+    font-weight: 600;
+    border: 0;
+}
+i#sub_spinner.fa.fa-spinner.fa-spin{
+    color: #ffd246;
+}
+.alert{
+    padding: 8px;
+    margin: 0;
+}
+/* .hero-contact-form .form-input{
+  margin: 8px 30px;
+  width: 79%;
+  height: 27px;
+  border-radius: 4px;
+  border: solid 1px #d6d6d6;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.18px;
+  color: #353535;
+  padding-left: 15px;
+} */
+/*hero form section ends here*/
+/*chat section starts here*/
+section.chat-section{
+    background-color: #0093dd;
+    padding: 10px;
+}
+h2.chat-titlename{
+    text-align: center;
+    color: #fff;
+}
+div.chat-box{
+    /* background: #fff;
+    border: 2px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.18) 0.4rem 0.4rem 1.6rem 0px; */
+    /* border-radius: 5px; */
+    /* height:300px; */
+    width: 94%;
+    max-width: 370px;
+    padding: 15px;
+    margin: 60px auto;
+}
+div.chat-box:hover{
+    background-color: #fff;
+    border: 2px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.18) 0.4rem 0.4rem 1.6rem 0px;
+    border-radius:10px;
+}
+a.chat-anchor-tag-1,
+a.chat-anchor-tag-2,
+a.chat-anchor-tag-3
+{
+    text-decoration: none;
+    font-size: 25px;
+    color: #0093dd;
+}
+div.chat-link{
+    text-align: center;
+    /* padding: 15px 0px; */
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    margin: 20px auto 0px;
+}
+/* .chat-box a:hover{
+    color: #0093dd;
+} */
+h4.chat-group-name{
+    text-align: center;
+    font-weight: 600;
+}
+p.chat-group-para{
+    text-align: center;
+}
+img.chat-box-image{
+    width: 100%;
+    /* max-width: 150px;
+    margin: 0 auto;
+    display: block; */
+}
+div.chat-box-images{
+    background-color: #fff;
+    border: 2px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.18) 0.4rem 0.4rem 1.6rem 0px;
+    border-radius: 50%;
+    max-width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+div.chat-box-content{
+    background-color: #fff;
+    border: 2px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.18) 0.4rem 0.4rem 1.6rem 0px;
+    border-radius: 10px;
+    margin-top:30px;
+    padding: 10px;
+    height: 135px;
+}
+/*chat section ends here*/
+/*office section starts here*/
+section.office-section{
+    padding: 10px;
+}
+img.office-collage-image{
+    width: 100%;
+    height: 100%;
+}
+div.office-address{
+    text-align: center;
+}
+div.contact-details{
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-top: 20px;
+}
+i.fa.fa-phone{
+    font-size: 30px;
+    color: #0093dd;
+}
+/*office section ends here*/
+/*media queries starts here*/
+@media only screen and (max-width:767px){
+    h1.hero-title{
+        font-size: 26px;
+    }
+    div.hero-image{
+        display: none;
+    }
+    h3.freetrial-form-title{
+        margin-top: 80px;
+    }
+    .alert{
+        padding: 0;
+    }
+    form#contact-form-new{
+        margin-top: 50px;
+    }
+    form#contact-form-new.form-sales{
+        margin: 0;
+    }
+    div.hero-contact-form,
+    div.sales-form,
+    div.support-form
+    {
+        background-color: #16325C;
+        border-radius: 35px;
+        box-shadow: rgba(0, 0, 0, 0.18) 0.4rem 0.4rem 1.6rem 0px;
+        padding: 25px;
+        margin: 25px auto;
+        border: 15px solid #000;
+        position: relative;
+    }
+    div.freetrial-form{
+        background-color: #16325C;
+        border-radius: 35px;
+        box-shadow: rgba(0, 0, 0, 0.18) 0.4rem 0.4rem 1.6rem 0px;
+        padding: 25px;
+        margin: 25px auto;
+        border: 15px solid #000;
+        position: relative;
+    }
+    div.top-notch-model{
+        background-color: #000;
+        width: 100px;
+        height: 20px;
+        position: absolute;
+        top:0;
+        left: 85px;
+        border-radius: 10px;
+    }
+    hr.top-notch-hr{
+        border: 1px solid #fff;
+        margin: 10px auto;
+        width: 50%;
+        border-radius: 5px;
+    }
+    /* div.sales-form{
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.18) 0.4rem 0.4rem 1.6rem 0px;
+        padding: 25px;
+        margin: 25px auto;
+    }
+    div.support-form{
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.18) 0.4rem 0.4rem 1.6rem 0px;
+        padding: 25px;
+        margin: 25px auto;
+    }
+    div.freetrial-form{
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.18) 0.4rem 0.4rem 1.6rem 0px;
+        padding: 25px;
+        margin: 25px auto;
+    } */
+}
+@media only screen and (min-width:768px){
+    div.chat-box-section{
+        display: flex;
+    }
+    div.office-box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    div.office-collage{
+        width: 70%;
+    }
+    div.office-address{
+        /* align-self: center; */
+        margin-left: 50px;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:992px){
+    div.hero-contact-form{
+        width: 100%;
+        max-width: 300px;
+        position: absolute;
+        top: 450px;
+        left: 180px;
+    }
+    div.sales-form{
+        width: 100%;
+        max-width: 300px;
+        position: absolute;
+        top: 400px;
+        left: 180px;
+    }
+    div.support-form{
+        width: 100%;
+        max-width: 300px;
+        position: absolute;
+        top: 400px;
+        left: 180px;
+    }
+    div.freetrial-form{
+        width: 100%;
+        max-width: 300px;
+        position: absolute;
+        top: 400px;
+        left: 180px;
+    }
+    div.top-notch-model{
+        display: none;
+    }
+    img.office-collage-image {
+        width: 100%;
+        height: auto;
+    }
+}
+@media only screen and (min-width:992px) and (max-width:1200px){
+    div.top-notch-model{
+        display: none;
+    }
+    div#form_error_sales{
+        margin-top: 10px;
+    }
+    .alert{
+        padding: 0;
+    }
+    textarea#sales-message.form-control.sales{
+        height: 63px;
+    }
+    textarea#message.form-control.hero-form-message{
+        height: 100px;
+    }
+    textarea#support-message.form-control{
+        height: 100px;
+    }
+    img.hero-form-image{
+        display: none;
+    }
+    div.hero-image{
+        background-image: url('https://d2woyw6vp5g0b2.cloudfront.net/images/landingpage/Contact Corefactors.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 460px;
+    }
+    div.hero-contact-form{
+        width: 19%;
+        max-width: 300px;
+        position: absolute;
+        top: 130px;
+        left: 224px;
+    }
+    div.sales-form{
+        width: 19%;
+        max-width: 300px;
+        position: absolute;
+        top: 110px;
+        left: 224px;
+    }
+    div.support-form{
+        width: 19%;
+        max-width: 300px;
+        position: absolute;
+        top: 150px;
+        left: 224px;
+    }
+    div.freetrial-form{
+        width: 19%;
+        max-width: 300px;
+        position: absolute;
+        top: 160px;
+        left: 224px;
+    }
+}
+@media only screen and (min-width:1200px){
+    textarea#message.form-control.sales{
+        height: 134px;
+    }
+    img.hero-form-image{
+        display: none;
+    }
+    div.hero-image{
+        background-image: url('https://d2woyw6vp5g0b2.cloudfront.net/images/landingpage/Contact Corefactors.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 660px;
+    }
+    div.hero-contact-form{
+        width: 100%;
+        max-width: 260px;
+        /* margin: 0 auto; */
+        position: absolute;
+        top: 220px;
+        left: 321px;
+    }
+    div.sales-form{
+        width: 100%;
+        max-width: 260px;
+        position: absolute;
+        top: 180px;
+        left: 321px;
+    }
+    div.support-form{
+        width: 100%;
+        max-width: 260px;
+        position: absolute;
+        top: 180px;
+        left: 321px;
+    }
+    div.freetrial-form{
+        width: 100%;
+        max-width: 260px;
+        position: absolute;
+        top: 220px;
+        left: 321px;
+    }
+    div.top-notch-model{
+        display: none;
+    }
+}

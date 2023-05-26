@@ -1,0 +1,99 @@
+/*thankyou message section css starts here*/
+section.thankyou-message-section{
+    margin-top: 98px;
+    background: #0093dd;
+    padding: 20px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+}
+.thankyou-message{
+    width: 100%;
+    margin: 0 auto;
+}
+.thankyou-message h2{
+    color: #fff;
+    
+    text-align: center;
+    line-height: 1.5em;
+}
+section.customer-logos-section{
+    background-color: #0093dd;
+    padding: 20px;
+    margin-top: 98px;
+}
+.customer-logos-title h2{
+    text-align: center;
+    color: #fff;
+    /* font-weight: 600; */
+}
+section.customer-logos.slider.homepage-logos-slider{
+    background-color: #fff;
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+}
+div.container.logos-company.homepage{
+    margin: 50px auto;
+}
+img.customer-logo{
+    width: 100%;
+    max-width: 140px;
+    margin: 5px auto;
+}
+/*integrated-software-section css starts here*/
+section.integrated-software-section{
+    padding: 50px 20px;
+}
+.integrated-software-title p{
+    text-align: center;
+    color: #16325c;
+    font-weight: 600;
+    font-size: 18px;
+}
+.integrated-software-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.integrated-software-card{
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    background-color: #fff;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,.18) 0.4rem 0.4rem 1.6rem 0;
+    padding: 10px;
+    margin: 40px auto;
+}
+.integrated-software-card h2{
+    text-align: center;
+    color: #16325c;
+}
+img.integrated-software-card-image{
+    width: 100%;
+    max-width: 75px;
+    margin: 20px auto;
+    display: block;
+}
+button.integrated-software-card-button{
+    width: 130px;
+    height: 40px;
+    background-color: #0093dd;
+    border: 0;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 600;
+    margin: 20px auto;
+    display: block;
+}
+button.integrated-software-card-button:hover{
+    background-color: #f7f7f7;
+    color: #0093dd;
+}
+@media only screen and (min-width:768px){
+    .thankyou-message{
+       max-width: 70%;
+    }
+}

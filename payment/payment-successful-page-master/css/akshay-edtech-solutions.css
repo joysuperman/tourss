@@ -1,0 +1,278 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/*slide1 css starts here*/
+.full-page-slide1{
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://d2woyw6vp5g0b2.cloudfront.net/images/landingpage/Edtech_Homepage_Mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.slide1-content{
+    padding: 20px;
+}
+p#changing-para{
+ font-size: 24px;
+ font-weight: 900;
+ color: #16325c;
+ text-align: left;
+}
+p#changing-text{
+    font-size: 18px;
+    color: #16325c;
+    text-align: left;
+    line-height: 1.7em;
+}
+button.slide1-button{
+    width: 250px;
+    height: 45px;
+    font-size: 20px;
+    margin: 25px auto;
+    border-radius: 50px;
+    border: none;
+    background-color: #fff;
+    color: #41aea9;
+    font-weight: 900;
+}
+button.slide2-button{
+    width: 250px;
+    height: 45px;
+    font-size: 20px;
+    margin: 0;
+    border-radius: 50px;
+    border: none;
+    background-color: #41aea9;
+    color: #fff;
+    font-weight: 900;
+}
+input.text-input{
+    display: block;
+    margin: 15px auto;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #41aea9;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 270px;
+}
+textarea.text-input{
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #41aea9;
+    border-radius: 50px;
+    height: 150px;
+    width: 100%;
+    max-width: 270px;
+}
+.modal-header .close{
+    margin-top: -40px;
+}
+div.modal-body{
+    text-align: center;
+}
+h2.modal-title{
+    text-align: center;
+    color: #000;
+    font-weight: 900;
+}
+input#popup-submit{
+    font-size: 20px;
+    margin: 5px auto;
+    border-radius: 50px;
+    border: none;
+    background-color: #41aea9;
+    color: #fff;
+    font-weight: 900;
+    padding: 8px 15px;
+}
+p#form-success-message,
+p#form-error-message{
+  color:#000;
+}
+p#form-success,
+p#form-error{
+  color: #fff;
+}
+/*slide2 css starts here*/
+.full-page-slide2{
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://d2woyw6vp5g0b2.cloudfront.net/images/landingpage/edtech_page_slide2_mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+h2.card-title{
+    text-align:center;
+    color: #000;
+    font-weight: 900;
+}
+.card-button{
+    text-align: center;
+}
+button.card-btn{
+    margin: 5px auto;
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: none;
+    background-color: #41aea9;
+    color: #fff;
+    font-weight: 900;
+    font-size: 16px;
+}
+div.salesbox-testimonial{
+    /* width: 100%;
+    max-width: 400px; */
+    padding:20px;
+}
+.sliding-cards{
+    padding: 0 10px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 50px;
+}
+div.testimonial-carousel{
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 25px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.18) 0.4rem 0.4rem 1.6rem 0px;
+}
+.carousel .item{
+    background:#fff;
+}
+.carousel{
+    margin: 0 auto 70px;
+}
+/*slide3 css starts here*/
+.full-page-slide3{
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://d2woyw6vp5g0b2.cloudfront.net/images/landingpage/edtech_page_slide3_mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/*slide4 css starts here*/
+.full-page-slide4{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background-image: url('https://d2woyw6vp5g0b2.cloudfront.net/images/landingpage/Edtech_Slide_4_Mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* display: flex;
+    justify-content: center;
+    align-items: flex-end; */
+}
+.slide4-text h1{
+    color: #fff;
+    font-weight: 900;
+    font-size: 24px;
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+.slide4-form{
+    /* position: absolute;
+    text-align: center;
+    top: 100px; */
+    text-align: center;
+    margin-bottom: 70px;
+}
+input.slide-input{
+    width: 275px;
+    /* height: 45px; */
+    margin: 15px;
+    padding:10px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 50px;
+}
+input.slide-submit-btn{
+    width: 140px;
+    height: 45px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #41aea9;
+    color: #fff;
+    font-weight: 900;
+    display: block;
+    margin: 15px auto;
+}
+/*media queries starts here*/
+@media only screen and (max-width:767px){
+  .slide1-content{
+      line-height: 0;
+  }
+  button.slide1-button {
+    margin: 0 auto 20px;
+  }
+}
+@media only screen and (min-width:768px){
+    /* .slide1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    } */
+    .modal-dialog {
+    width: 500px;
+    }
+    .slide1{
+        width: 60%;
+    }
+    .slide1-buttons{
+        display: flex;
+        flex-direction: row;
+    }
+    button.slide2-button{
+      margin: 25px auto;
+    }
+    .sliding-cards{
+        margin:0 10px 0 0;
+    }
+    button.slide1-button{
+    margin-right: 20px;
+    }
+    p#changing-para{
+    font-size: 40px;
+    }
+    p#changing-text{
+    font-size: 28px;
+    }
+   .full-page-slide1{
+        background-image: url('https://d2woyw6vp5g0b2.cloudfront.net/images/landingpage/Edtech_Homepage.jpg');
+        display: flex;
+        align-items: center;
+    }
+    .full-page-slide2{
+        background-image: url('https://d2woyw6vp5g0b2.cloudfront.net/images/landingpage/edtech_page_slide2.jpg');
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .full-page-slide3{
+        background-image: url('https://d2woyw6vp5g0b2.cloudfront.net/images/landingpage/edtech_page_slide3.jpg');
+    }
+    .full-page-slide4{
+       background-image: url('https://d2woyw6vp5g0b2.cloudfront.net/images/landingpage/Edtech_Slide_4.jpg');
+       align-items: center;
+    }
+    /* .slide4-form{
+    margin-top: 100px;
+    } */
+    .slide4-text h1 {
+       margin: 150px 0 40px 0;
+       font-size: 40px;
+    }
+}

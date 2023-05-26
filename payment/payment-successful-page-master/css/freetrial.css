@@ -1,0 +1,126 @@
+/*popup css starts here*/
+img.company-logos{
+    width: 100%;
+}
+.modal-dialog-exit-popup{
+    width: 100%;
+    max-width: 750px;
+    margin: 40px auto;
+}
+form#exit-popup-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /* position: absolute;
+    top: 210px; */
+}
+input.popup-input{
+    width: 100%;
+    max-width: 335px;
+    height: 45px;
+    margin: 15px auto;
+    border: 0;
+    border-radius: 0px;
+    padding: 8px;
+    border-bottom: 1px solid #000;
+}
+input.popup-message{
+    width: 100%;
+    max-width: 685px;
+    height: 45px;
+    margin: 15px auto;
+    border: 0;
+    border-radius: 7px;
+    padding: 8px;
+}
+input#exit-popup-submit{
+    width: 225px;
+    height: 40px;
+    background-color: #ffd246;
+    color: #16325c;
+    border: 0;
+    border-radius: 7px;
+    font-weight: 900;
+    font-size: 18px;
+    margin: 25px auto;
+}
+#exit-popup2 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  z-index: 10002;
+  top: 0;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+  margin: 0 auto;
+  text-align: center;
+  background: #1f1f1fd9;
+}
+p#popup_form_error{
+    color: #000 !important;
+}
+p#popup_form_success{
+    color: #6dc742 !important;
+    font-weight: 600;
+}
+h1.popup-title{
+    text-align: center;
+    color: #3E70B7;
+    font-weight: 900;
+    font-size: 30px;
+}
+p.save-includes-title{
+    text-align: center;
+    font-weight: 900;
+    font-size: 26px;
+}
+p.save-includes-para{
+    text-align: left;
+    color: #000;
+    font-size: 18px;
+}
+.save-includes{
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #3E70B7;
+    padding: 10px;
+    position: relative;
+}
+i.fa.fa-check{
+    color: #3E70B7;
+}
+.modal-content{
+    padding: 20px;
+}
+img.popup-offer-image{
+    width: 100%;
+    max-width: 100px;
+    position: absolute;
+    left: -50px;
+    top: -50px;
+}
+@media only screen and (max-width:500px){
+    h1.popup-title{
+        font-size: 24px;
+    }
+    p.save-includes-title{
+        font-size: 22px;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:711px){
+    input#exit-popup-submit{
+      width: 345px;
+    }
+}
+@media only screen and (max-width:700px){
+    #exit-popup2{
+        padding: 20px;
+    }
+}

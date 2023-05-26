@@ -1,0 +1,67 @@
+/*thankyou css starts here*/
+section.thankyou-message-section{
+    padding: 20px;
+    background-color: #0093dd;
+    /* height:100vh; */
+}
+.thankyou-message1 p{
+    color: #000;
+    text-align: center;
+    margin: 50px auto;
+    font-size: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(0,0,0,.18) 0.4rem 0.4rem 1.6rem 0;
+}
+.thankyou-message2 h1{
+    color: #fff;
+    text-align: center;
+    margin: 30px auto 0;
+}
+.thankyou-message2 p{
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+}
+.integrated-software-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.integrated-software-card{
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    background-color: #fff;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,.18) 0.4rem 0.4rem 1.6rem 0;
+    padding: 10px;
+    margin: 40px auto;
+}
+.integrated-software-card h2{
+    text-align: center;
+    color: #16325c;
+}
+img.integrated-software-card-image{
+    width: 100%;
+    max-width: 75px;
+    margin: 20px auto;
+    display: block;
+}
+button.integrated-software-card-button{
+    width: 130px;
+    height: 40px;
+    background-color: #0093dd;
+    border: 0;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 600;
+    margin: 20px auto;
+    display: block;
+}
+button.integrated-software-card-button:hover{
+    background-color: #f7f7f7;
+    color: #0093dd;
+}
