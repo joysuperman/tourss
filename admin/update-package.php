@@ -155,12 +155,20 @@ foreach($results as $result)
 </div>
 </div>
 
-<div class="form-group">
+								<div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Last Updation Date</label>
 									<div class="col-sm-8">
-<?php echo htmlentities($result->UpdationDate);?>
+										<?php echo htmlentities($result->UpdationDate);?>
 									</div>
-								</div>		
+								</div>	
+
+<div class="form-group">
+	<label for="focusedinput" class="col-sm-2 control-label">Gallery Image</label>
+	<div class="col-sm-8">
+		<img src="pacakgeimages/<?php echo htmlentities($result->packgeimageGallery);?>" width="200">&nbsp;&nbsp;&nbsp;<a href="change-image.php?galleryimgid=<?php echo htmlentities($result->PackageId);?>">Change Gallery Image</a>
+	</div>
+</div>
+
 								<?php }} ?>
 
 								<div class="row">

@@ -16,7 +16,29 @@ else{
 		$pdetails=$_POST['packagedetails'];	
 		$pimage=$_FILES["packageimage"]["name"];
 		move_uploaded_file($_FILES["packageimage"]["tmp_name"],"pacakgeimages/".$_FILES["packageimage"]["name"]);
-		$sql="INSERT INTO tbltourpackages(PackageName,PackageType,PackageLocation,PackagePrice,PackageFetures,PackageDetails,PackageImage) VALUES(:pname,:ptype,:plocation,:pprice,:pfeatures,:pdetails,:pimage)";
+
+		$gaImg = ""; 
+	    $allowTypes = array(
+	        'image/png',
+	        'image/jpg',
+	        'image/jpeg'
+	    );
+
+	    if (!empty($_FILES['galleryimg']['name'][0])) { // Check if any file has been uploaded
+	        $totalFile = count($_FILES["galleryimg"]["name"]);
+	        for ($i = 0; $i < $totalFile; $i++) {
+	            if (in_array($_FILES['galleryimg']['type'][$i], $allowTypes) && $_FILES['galleryimg']['size'][$i] < 2 * 1024 * 1024) {
+	                $galleryimage = $_FILES['galleryimg']['name'][$i];
+	                move_uploaded_file($_FILES['galleryimg']['tmp_name'][$i], PRODUCT_IMG_SERVER_PATH . "/packge_galery/" . $galleryimage);
+	                $gaImg .= $galleryimage . ',';
+	            } else {
+	                $msg = "File not supported or exceeds the size limit";
+	            }
+	        }
+	        $gaImg = rtrim($gaImg, ','); // Remove trailing comma
+	    }
+
+		$sql="INSERT INTO tbltourpackages(PackageName,PackageType,PackageLocation,PackagePrice,PackageFetures,PackageDetails,PackageImage,packgeimageGallery) VALUES(:pname,:ptype,:plocation,:pprice,:pfeatures,:pdetails,:pimage,:gaImg)";
 		$query = $dbh->prepare($sql);
 		$query->bindParam(':pname',$pname,PDO::PARAM_STR);
 		$query->bindParam(':ptype',$ptype,PDO::PARAM_STR);
@@ -25,6 +47,7 @@ else{
 		$query->bindParam(':pfeatures',$pfeatures,PDO::PARAM_STR);
 		$query->bindParam(':pdetails',$pdetails,PDO::PARAM_STR);
 		$query->bindParam(':pimage',$pimage,PDO::PARAM_STR);
+		$query->bindParam(':gaImg',$gaImg,PDO::PARAM_STR);
 		$query->execute();
 		$lastInsertId = $dbh->lastInsertId();
 		if($lastInsertId)
@@ -104,28 +127,28 @@ else{
 										<input type="text" class="form-control1" name="packagename" id="packagename" placeholder="Create Package" required>
 									</div>
 								</div>
-<div class="form-group">
+								<div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Package Type</label>
 									<div class="col-sm-8">
 										<input type="text" class="form-control1" name="packagetype" id="packagetype" placeholder=" Package Type eg- Family Package / Couple Package" required>
 									</div>
 								</div>
 
-<div class="form-group">
+								<div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Package Location</label>
 									<div class="col-sm-8">
 										<input type="text" class="form-control1" name="packagelocation" id="packagelocation" placeholder=" Package Location" required>
 									</div>
 								</div>
 
-<div class="form-group">
+								<div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Package Price in TK</label>
 									<div class="col-sm-8">
 										<input type="text" class="form-control1" name="packageprice" id="packageprice" placeholder=" Package Price is TK" required>
 									</div>
 								</div>
 
-<div class="form-group">
+								<div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Package Features</label>
 									<div class="col-sm-8">
 										<input type="text" class="form-control1" name="packagefeatures" id="packagefeatures" placeholder="Package Features Eg-free Pickup-drop facility" required>
@@ -133,45 +156,46 @@ else{
 								</div>		
 
 
-<div class="form-group">
+								<div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Package Details</label>
 									<div class="col-sm-8">
 										<textarea class="form-control" rows="5" cols="50" name="packagedetails" id="packagedetails" placeholder="Package Details" required></textarea> 
 									</div>
 								</div>															
-<div class="form-group">
+								<div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Package Image</label>
 									<div class="col-sm-8">
 										<input type="file" name="packageimage" id="packageimage" required>
 									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="focusedinput" class="col-sm-2 control-label">Gallery Image</label>
+									<div class="col-sm-8">
+										<input type="file" name="galleryimg[]" id="galleryimgid1">
+										<input type="file" name="galleryimg[]" id="galleryimgid2">
+										<input type="file" name="galleryimg[]" id="galleryimgid3">
+									</div>
 								</div>	
 
 								<div class="row">
-			<div class="col-sm-8 col-sm-offset-2">
-				<button type="submit" name="submit" class="btn-primary btn">Create</button>
+									<div class="col-sm-8 col-sm-offset-2">
+										<button type="submit" name="submit" class="btn-primary btn">Create</button>
 
-				<button type="reset" class="btn-inverse btn">Reset</button>
-			</div>
-		</div>
+										<button type="reset" class="btn-inverse btn">Reset</button>
+									</div>
+								</div>
 						
-					
-						
-						
-						
-					</div>
+						</div>
 					
 					</form>
-
-     
-      
-
-      
-      <div class="panel-footer">
-		
-	 </div>
-    </form>
-  </div>
- 	</div>
+			      
+			      <div class="panel-footer">
+					
+				 </div>
+			    </form>
+			  </div>
+ 		</div>
  	<!--//grid-->
 
 <!-- script-for sticky-nav -->

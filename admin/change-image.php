@@ -8,24 +8,53 @@ header('location:index.php');
 }
 else{
 	$imgid=intval($_GET['imgid']);
-if(isset($_POST['submit']))
-{
+	if(isset($_POST['submit']))
+	{
+		$pimage=$_FILES["packageimage"]["name"];
+		move_uploaded_file($_FILES["packageimage"]["tmp_name"],"pacakgeimages/".$_FILES["packageimage"]["name"]);
+		$sql="update TblTourPackages set PackageImage=:pimage where PackageId=:imgid";
+		$query = $dbh->prepare($sql);
 
-$pimage=$_FILES["packageimage"]["name"];
-move_uploaded_file($_FILES["packageimage"]["tmp_name"],"pacakgeimages/".$_FILES["packageimage"]["name"]);
-$sql="update TblTourPackages set PackageImage=:pimage where PackageId=:imgid";
-$query = $dbh->prepare($sql);
-
-$query->bindParam(':imgid',$imgid,PDO::PARAM_STR);
-$query->bindParam(':pimage',$pimage,PDO::PARAM_STR);
-$query->execute();
-$msg="Package Created Successfully";
+		$query->bindParam(':imgid',$imgid,PDO::PARAM_STR);
+		$query->bindParam(':pimage',$pimage,PDO::PARAM_STR);
+		$query->execute();
+		$msg="Package Created Successfully";
+	}
 
 
+	$galleryimgid = intval($_GET['galleryimgid']);
+	if (isset($_POST['submit17'])) {
+	    $gaImg = ""; // Variable to store the gallery image names
+	    $allowTypes = array(
+	        'image/png',
+	        'image/jpg',
+	        'image/jpeg'
+	    );
 
-}
+	    if (!empty($_FILES['galleryimg']['name'][0])) { // Check if any file has been uploaded
+	        $totalFile = count($_FILES["galleryimg"]["name"]);
+	        for ($i = 0; $i < $totalFile; $i++) {
+	            if (in_array($_FILES['galleryimg']['type'][$i], $allowTypes) && $_FILES['galleryimg']['size'][$i] < 2 * 1024 * 1024) {
+	                $galleryimage = $_FILES['galleryimg']['name'][$i];
+	                move_uploaded_file($_FILES['galleryimg']['tmp_name'][$i], PRODUCT_IMG_SERVER_PATH . "/packge_galery/" . $galleryimage);
+	                $gaImg .= $galleryimage . ',';
+	            } else {
+	                $msg = "File not supported or exceeds the size limit";
+	            }
+	        }
+	        $gaImg = rtrim($gaImg, ','); // Remove trailing comma
+	    }
 
-	?>
+	    $sql = "UPDATE TblTourPackages SET packgeimageGallery=:gaImg WHERE PackageId=:galleryimgid";
+	    $query = $dbh->prepare($sql);
+
+	    $query->bindParam(':gaImg', $gaImg, PDO::PARAM_STR);
+	    $query->bindParam(':galleryimgid', $galleryimgid, PDO::PARAM_STR);
+	    $query->execute();
+	    $msg = "Update Gallery Image Successfully!";
+	}
+
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -87,9 +116,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
   	         <div class="tab-content">
 						<div class="tab-pane active" id="horizontal-form">
+
+							<?php  
+
+								$imgid=intval($_GET['imgid']);
+								if ($imgid != "") {
+							?>
 							<form class="form-horizontal" name="package" method="post" enctype="multipart/form-data">
 						<?php 
-$imgid=intval($_GET['imgid']);
+
 $sql = "SELECT PackageImage from TblTourPackages where PackageId=:imgid";
 $query = $dbh -> prepare($sql);
 $query -> bindParam(':imgid', $imgid, PDO::PARAM_STR);
@@ -110,7 +145,7 @@ foreach($results as $result)
 <div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">New Image</label>
 									<div class="col-sm-8">
-										<input type="file" name="packageimage" id="packageimage" required>
+										<input type="file" name="packageimage[]" id="packageimage" required>
 									</div>
 								</div>	
 								<?php }} ?>
@@ -130,7 +165,38 @@ foreach($results as $result)
 					
 					</form>
 
-     
+     <?php }
+
+			$galleryimgid=intval($_GET['galleryimgid']);
+			if ($galleryimgid != "") {
+							?>
+							<form class="form-horizontal" name="package" method="post" enctype="multipart/form-data">
+							    <div class="form-group">
+							        <label for="galleryimgid1" class="col-sm-2 control-label">New Image 1</label>
+							        <div class="col-sm-8">
+							            <input type="file" name="galleryimg[]" id="galleryimgid1">
+							        </div>
+							    </div>
+							    <div class="form-group">
+							        <label for="galleryimgid2" class="col-sm-2 control-label">New Image 2</label>
+							        <div class="col-sm-8">
+							            <input type="file" name="galleryimg[]" id="galleryimgid2">
+							        </div>
+							    </div>
+							    <div class="form-group">
+							        <label for="galleryimgid3" class="col-sm-2 control-label">New Image 3</label>
+							        <div class="col-sm-8">
+							            <input type="file" name="galleryimg[]" id="galleryimgid3">
+							        </div>
+							    </div>
+							    <div class="row">
+							        <div class="col-sm-8 col-sm-offset-2">
+							            <button type="submit" name="submit17" class="btn-primary btn">Update</button>
+							        </div>
+							    </div>
+							</form>
+
+     <?php } ?>
       
 
       

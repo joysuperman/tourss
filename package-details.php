@@ -54,12 +54,12 @@ $error="Something went wrong. Please try again";
 	<script>
 		 new WOW().init();
 	</script>
-<script src="js/jquery-ui.js"></script>
-					<script>
-						$(function() {
-						$( "#datepicker,#datepicker1" ).datepicker();
-						});
-					</script>
+	<script src="js/jquery-ui.js"></script>
+		<script>
+			$(function() {
+			$( "#datepicker,#datepicker1" ).datepicker();
+			});
+		</script>
 	  <style>
 		.errorWrap {
     padding: 10px;
@@ -143,17 +143,24 @@ foreach($results as $result)
 				<!-- <h1>PHOTO GALLARY</h1>
 				<a href="slideshow/photos.php"><p style="padding-top: 1%"><?php echo htmlentities($result->PackageLink);?> </p></a> -->
 
-				<h1>PHOTO GALLARY</h1>
-				<a href="slideshow/photos.php">	<p style="padding-top: 1%"><?php echo htmlentities($result->PackageLink);?> </p>
-				
-</a>
-<img src="admin/pacakgeimages/<?php echo htmlentities($result->PackageImage1);?>" class="img-responsive" alt="" style="width:300px; height: 150px;">
-<br>
-			<img src="admin/pacakgeimages/<?php echo htmlentities($result->PackageImage2);?>" class="img-responsive" alt="" style="width:300px; height: 150px;">
-			<br>
-			<img src="admin/pacakgeimages/<?php echo htmlentities($result->PackageImage3);?>" class="img-responsive" alt="" style="width:300px; height: 150px;">
+				<h1 style="margin-bottom: 15px;">PHOTO GALLARY</h1>
 
-				
+
+				<div class="row">
+
+					<?php 
+						$gaImg = htmlentities($result->packgeimageGallery);
+				        $galleryImages = explode(',', $gaImg);
+				        foreach ($galleryImages as $image) { 
+				            echo '
+				            	<div class="col-md-4">
+									<img src="'.SITE_PATH.'images/packge_galery/'. $image .'" class="img-responsive" alt="" style="width:100%; object-fit: cover;">
+								</div>
+
+				            ';
+				        }
+					?>
+				</div>
 
 		</div>
 
@@ -189,20 +196,6 @@ foreach($results as $result)
 
 	</div>
 
-
-	<div class="w-100 h-75 bg text-center center" style="background:#fff34;">
-								<form class="form-inline">
-  <div class="form-group mx-sm-3 mb-2">
-    <label for="inputPassword2" class="sr-only">Name</label>
-    <input type="text" class="form-control" id="inputPassword2" placeholder="Name">
-  </div>
-  <div class="form-group mx-sm-3 mb-2">
-    <label for="inputPassword2" class="sr-only">Comment</label>
-    <input type="text" class="form-control" id="inputPassword2" placeholder="comment">
-  </div>
-  <button type="submit" class="btn btn-primary mb-2">Comment</button>
-</form>
-		</div>
 
 		
 	<div class="w-100 h-75 bg text-center center" style="background:#fff34;">

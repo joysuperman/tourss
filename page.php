@@ -2,7 +2,6 @@
 session_start();
 // error_reporting(0);
 include('includes/config.php');
-
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -97,6 +96,7 @@ foreach($results as $result)
 				if($lastInsertId)
 				{
 					echo "<script type='text/javascript'>alert('successfully Send!')</script>";
+					send_mail($email, "Thanks For Contact Us!", "We Receive Your email. We will contact you after sometimes.");
 				}
 				else 
 				{

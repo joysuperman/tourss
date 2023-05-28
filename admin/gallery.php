@@ -26,10 +26,7 @@ else{
 				{
 					echo "<script type='text/javascript'>alert('Category Not Added!')</script>";
 				}
-			}else{
-
 			}
-
 		}
 
 		if(isset($_POST['submit14']))
@@ -72,10 +69,25 @@ else{
 				{
 					echo "<script type='text/javascript'>alert('Category Not Added!')</script>";
 				}
-			}else{
-
 			}
+		}
 
+
+		if (isset($_GET['delete'])) {
+				$imgID = $_GET['delete'];
+
+				$sql = "DELETE FROM tblgallery WHERE id = :imgID";
+				$query = $dbh->prepare($sql);
+				$query->bindParam(':imgID', $imgID, PDO::PARAM_INT);
+				$query->execute();
+
+				if ($query->rowCount() > 0) {
+				    echo "<script type='text/javascript'>alert('Image successfully deleted!');
+				    </script>";
+				    header("Location: /tourss/admin/gallery.php");
+				} else {
+				    echo "<script type='text/javascript'>alert('Image not found or not deleted!')</script>";
+				}
 		}
 
 	?>
@@ -245,8 +257,7 @@ foreach($results as $result)
 							<td><img src="<?php echo PRODUCT_IMG_SITE_PATH."gallery-img/".htmlentities($result->galleryimage);?>" alt="img" style="height: 100px; width: 100px; object-fit: cover;"></td>
 							<td><?php echo htmlentities($result->adddate);?></td>
 							<td>
-								<button class="btn btn-success">Edit</button>
-								<button class="btn btn-danger">Delete</button>
+								<a href="?delete=<?php echo htmlentities($result->id);?>" class="btn btn-danger">Delete</a>
 							</td>
 						  </tr>
 						 <?php $cnt=$cnt+1;} }?>
