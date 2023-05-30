@@ -56,7 +56,6 @@ else{
 </head>
 <body>
     <!-- top-header -->
-    <div class="top-header">
     <?php include('includes/header.php');?>
     <div class="banner-1 ">
         <div class="container">
@@ -68,17 +67,18 @@ else{
     <div class="container">
         <h3>Photo Gallery</h3>
 
-
-        <?php 
-            $sql = "SELECT * FROM imagecategory";
-            $query = $dbh->prepare($sql);
-            $query->execute();
-            $categories = $query->fetchAll(PDO::FETCH_ASSOC);
-            
-            foreach ($categories as $category) {
-                echo '<label for="check2"> <a href="?category='.$category['id'].'">'.$category['categoryname'].'</a></label>';
-            }
-        ?>
+        <div class="text-center">
+            <?php 
+                $sql = "SELECT * FROM imagecategory";
+                $query = $dbh->prepare($sql);
+                $query->execute();
+                $categories = $query->fetchAll(PDO::FETCH_ASSOC);
+                
+                foreach ($categories as $category) {
+                    echo '<label for="check2"> <a href="?category='.$category['id'].'">'.$category['categoryname'].'</a></label>';
+                }
+            ?>
+        </div>
 
     </div>
 

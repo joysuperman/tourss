@@ -30,7 +30,6 @@ foreach($results as $result)
 	$date1=date_create("$cdate");
 	$date2=date_create("$fdate");
  $diff=date_diff($date1,$date2);
-echo $df=$diff->format("%a");
 if($df>1)
 {
 $status=2;
@@ -99,7 +98,6 @@ $error="You can't cancel booking before 24 hours";
 </head>
 <body>
 <!-- top-header -->
-<div class="top-header">
 <?php include('includes/header.php');?>
 <div class="banner-1 ">
 	<div class="container">

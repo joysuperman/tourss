@@ -47,7 +47,6 @@ include('includes/config.php');
 </head>
 <body>
 <!-- top-header -->
-<div class="top-header">
 <?php include('includes/header.php');?>
 <div class="banner-1 ">
 	<div class="container">
