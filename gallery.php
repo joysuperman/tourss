@@ -94,10 +94,14 @@ else{
             $query->execute();
             $items = $query->fetchAll(PDO::FETCH_ASSOC);
             
-            foreach ($items as $item) {
-                echo '<div class="pic place">
-                    <img src="'.PRODUCT_IMG_SITE_PATH."gallery-img/".$item['galleryimage'].'" alt="">
-                </div>';
+            if (count($items)>0) {
+                foreach ($items as $item) {
+                    echo '<div class="pic place">
+                        <img src="'.PRODUCT_IMG_SITE_PATH."gallery-img/".$item['galleryimage'].'" alt="">
+                    </div>';
+                }
+            }else{
+                echo 'No Item Found!';
             }
         ?>
     </div>

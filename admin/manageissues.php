@@ -9,24 +9,20 @@ header('location:index.php');
 else{ 
 	// code for cancel
 if(isset($_REQUEST['eid']))
-	{
-$eid=intval($_GET['eid']);
-$status=1;
+{
+	$eid=intval($_GET['eid']);
+	$status=1;
 
-$sql = "UPDATE tblenquiry SET Status=:status WHERE  id=:eid";
-$query = $dbh->prepare($sql);
-$query -> bindParam(':status',$status, PDO::PARAM_STR);
-$query-> bindParam(':eid',$eid, PDO::PARAM_STR);
-$query -> execute();
+	$sql = "UPDATE tblenquiry SET Status=:status WHERE  id=:eid";
+	$query = $dbh->prepare($sql);
+	$query -> bindParam(':status',$status, PDO::PARAM_STR);
+	$query-> bindParam(':eid',$eid, PDO::PARAM_STR);
+	$query -> execute();
 
-$msg="Enquiry  successfully read";
+	$msg="Enquiry  successfully read";
 }
 
-
-
-
-
-	?>
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -38,40 +34,12 @@ $msg="Enquiry  successfully read";
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <link rel="stylesheet" href="css/morris.css" type="text/css"/>
 <link href="css/font-awesome.css" rel="stylesheet"> 
-<script src="js/jquery-2.1.4.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/table-style.css" />
 <link rel="stylesheet" type="text/css" href="css/basictable.css" />
-<script type="text/javascript" src="js/jquery.basictable.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-      $('#table').basictable();
-
-      $('#table-breakpoint').basictable({
-        breakpoint: 768
-      });
-
-      $('#table-swap-axis').basictable({
-        swapAxis: true
-      });
-
-      $('#table-force-off').basictable({
-        forceResponsive: false
-      });
-
-      $('#table-no-resize').basictable({
-        noResize: true
-      });
-
-      $('#table-two-axis').basictable();
-
-      $('#table-max-height').basictable({
-        tableWrapper: true
-      });
-    });
-</script>
 <link href='//fonts.googleapis.com/css?family=Roboto:700,500,300,100italic,100,400' rel='stylesheet' type='text/css'/>
 <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="css/icon-font.min.css" type='text/css' />
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
   <style>
 		.errorWrap {
     padding: 10px;
@@ -223,11 +191,17 @@ foreach($results as $result)
 										});
 							</script>
 <!--js -->
+<script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/jquery.nicescroll.js"></script>
 <script src="js/scripts.js"></script>
 <!-- Bootstrap Core JavaScript -->
-   <script src="js/bootstrap.min.js"></script>
-   <!-- /Bootstrap Core JavaScript -->	   
+<script src="js/bootstrap.min.js"></script>
+<!-- /Bootstrap Core JavaScript -->	
+
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script>
+	let table = new DataTable('#table');
+</script>
 
 </body>
 </html>

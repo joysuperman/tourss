@@ -90,6 +90,7 @@ else{
 							<th>Email</th>
 							<th>Message </th>
 							<th>Date</th>
+							<th>Reply</th>
 						  </tr>
 						</thead>
 						<tbody>
@@ -108,6 +109,7 @@ foreach($results as $result)
 							<td><?php echo htmlentities($result->email);?></td>
 							<td><?php echo htmlentities($result->message);?></td>
 							<td><?php echo htmlentities($result->contact_date);?></td>
+							<td><a href="mailto:<?php echo htmlentities($result->email);?>" class="btn btn-success">Reply</a></td>
 						  </tr>
 						 <?php $cnt=$cnt+1;} }?>
 						</tbody>
